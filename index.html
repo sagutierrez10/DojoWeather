@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoWeather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="container flexed">
+            <div class="title">    
+                <h1>DojoWeather</h1>
+            </div>     
+            <div id="nav-right" onclick="alert('loading weather report...')" class="place" class="flexed">
+                <h2>Burbank</h2>
+                <h2>Chicago</h2>
+                <h2>Dallas</h2>
+            </div>    
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div id="sub-title">
+                <div class="san-jose">
+                    <p>San Jose</p>
+                </div>
+                <div class="sub-title-right">
+                    <div class="text">
+                        <p>show temperature in</p>
+                    </div>
+                    <select onchange="swap(this)">
+                        <option>° C</option>
+                        <option>° F</option>
+                    </select>
+                </div>
+            </div>
+            <div id="cities" class="flexed">
+                <div class="cities">
+                    <h4>Today</h4>
+                    <img src="images/some_rain.png" alt="cloud with rain">
+                    <p>some rain</p>
+                    <div class="degrees">
+                        <h5><span>24</span>°</h5>
+                        <h6><span>18</span>°</h6>
+                    </div>
+                </div>
+                <div class="cities">
+                    <h4>Tomorrow</h4>
+                    <img src="images/some_sun.png" alt="sun">
+                    <p>some sun</p>
+                    <div class="degrees">
+                        <h5><span>27</span>°</h5>
+                        <h6><span>19</span>°</h6>
+                    </div>
+                </div>
+                <div class="cities">
+                    <h4>Friday</h4>
+                    <img src="images/some_clouds.png" alt="clouds">
+                    <p>some clouds</p>
+                    <div class="degrees">
+                        <h5><span>21</span>°</h5>
+                        <h6><span>16</span>°</h6>
+                    </div>
+                </div>
+                <div class="cities">
+                    <h4>Saturday</h4>
+                    <img src="images/some_sun.png" alt="sun">
+                    <p>some sun</p>
+                    <div class="degrees">
+                        <h5><span>26</span>°</5>
+                        <h6><span>21</span>°</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="message">
+        <div class="header"><span>Stop! Cookie time</span>
+        </div>
+        <div class= "image">
+        <img src="./images/cookie.png" alt="cookie icon">
+        <p>We use cookies (sadly not the edible ones) to personalize content and ads, (to provide social media features and to analyse our traffic. <a href="www.whatever.com">Read more...</a></p>
+        </div>
+        <div class="accept">
+            <button onclick="hide(this)" id="dismiss-popup-btn">I Accept</button>
+        </div>    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

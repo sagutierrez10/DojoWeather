@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: sans-serif;
+    /* outline: 1px dashed black; */
+}
+nav{
+    min-height: 50px;
+    background-color: #9fc5f8;
+    border-top:whitesmoke 5px solid;
+}
+nav h1{
+    color:whitesmoke;
+}
+.container {
+    width:70%;
+    margin: 0px auto;
+}
+#nav-right{
+    min-height: 50px;
+    display: flex;
+    gap:5.5em;
+    color: whitesmoke;
+}
+.flexed{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+#sub-title {
+    margin-top:10px;
+    margin-bottom: 50px;
+    min-height: 100px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+#cities{
+    min-height: 300px;
+    gap:1.5em;
+    justify-content: center;
+    
+}
+.cities{
+    background-color:#eee;
+    min-height: 350px;
+    flex:1;
+    text-align: center;
+}
+.san-jose{
+    font-size: 35px;
+
+}
+h1{
+    font-size: 45px;
+}
+.sub-title-right{
+    display: flex;
+    gap:10px;
+    font-size: 20px;
+}
+.cities img{
+    margin:30px 10px;
+    width:170px;
+    height:170px;
+    border-radius: 50%;
+}
+.degrees{
+    display: flex;
+    justify-content: space-evenly;
+    padding:10px;
+    font-size: 30px;
+    margin-top: 15px;
+}
+h4{
+    font-size: 30px;
+    font-weight: lighter;
+}
+h5{
+    font-size: 30px;
+    color: #cf2a27;
+}
+h6{
+    font-size: 30px;
+    color:#659be6;
+}
+/* message design */
+#message{
+    background-color: #eee;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:70%;
+    margin: 80px auto;
+    /* opacity:0;
+    z-index:2;
+    top:-200%; */
+    /* transform: translate(-50%,-50%) scale(0.5);    
+    transition: opacity 300ms easi-in-out, top 1000ms ease-in-out, transform 1000 ms ease-in-out; */
+}
+.header{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+#message img{
+    width:30px;
+}
+.image{
+    display: flex;
+    flex-direction: row;
+    margin:10px;
+}
+.accept{
+    text-align: end;
+    padding:15px;
+}
+.accept button{
+    background-color: #659be6;
+    box-shadow: 2px 3px black;
+    padding:5px;
+}
+#message .accept button{
+    cursor:pointer;
+}
